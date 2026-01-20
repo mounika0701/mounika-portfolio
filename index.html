@@ -3,296 +3,295 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mounika Boggada | Data Analyst</title>
-  <meta name="description" content="Mounika Boggada — Data Analyst (SQL, Python, Power BI). Portfolio showcasing projects in data quality, automation, ETL, and analytics." />
+  <title>Mounika Boggada | Data Analytics & Reporting</title>
+  <meta name="description" content="Mounika Boggada — Data Analytics & Reporting (SQL, Python, Power BI). Experience in data validation, reconciliation, reporting, and analytics." />
   <style>
     :root{
       --bg:#0b1020; --panel:#0f1730; --text:#e7ecff; --muted:#aab6e6;
       --accent:#7aa7ff; --accent2:#9cffc7; --border:rgba(255,255,255,.10);
-      --shadow: 0 12px 40px rgba(0,0,0,.35);
-      --radius:16px;
+      --shadow:0 12px 40px rgba(0,0,0,.35); --radius:16px; --max:1080px;
     }
     *{box-sizing:border-box}
-    html,body{height:100%}
     body{
-      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
-      color:var(--text); background: radial-gradient(1200px 600px at 20% 0%, rgba(122,167,255,.20), transparent 60%),
-                               radial-gradient(900px 500px at 90% 20%, rgba(156,255,199,.14), transparent 55%),
-                               var(--bg);
+      margin:0;
+      font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 600px at 20% 0%, rgba(122,167,255,.20), transparent 60%),
+        radial-gradient(900px 500px at 90% 20%, rgba(156,255,199,.14), transparent 55%),
+        var(--bg);
       line-height:1.55;
     }
-    a{color:inherit; text-decoration:none}
+    a{color:inherit;text-decoration:none}
     a:hover{color:var(--accent)}
-
-    .wrap{max-width:1080px; margin:0 auto; padding:24px}
-
-    /* Top bar */
+    .wrap{max-width:var(--max);margin:0 auto;padding:24px}
     header{
-      position:sticky; top:0; z-index:10;
-      backdrop-filter: blur(10px);
-      background: rgba(11,16,32,.55);
+      position:sticky;top:0;z-index:10;
+      backdrop-filter:blur(10px);
+      background:rgba(11,16,32,.55);
       border-bottom:1px solid var(--border);
     }
     .top{
-      display:flex; align-items:center; justify-content:space-between; gap:16px;
-      max-width:1080px; margin:0 auto; padding:14px 24px;
+      display:flex;align-items:center;justify-content:space-between;gap:16px;
+      max-width:var(--max);margin:0 auto;padding:14px 24px;
     }
-    .brand{display:flex; align-items:center; gap:12px; min-width: 220px}
+    .brand{display:flex;align-items:center;gap:12px}
     .dot{
-      width:12px; height:12px; border-radius:999px;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      box-shadow: 0 0 0 6px rgba(122,167,255,.12);
+      width:12px;height:12px;border-radius:999px;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      box-shadow:0 0 0 6px rgba(122,167,255,.12);
     }
-    .name{font-weight:700; letter-spacing:.2px}
-    .role{color:var(--muted); font-size:13px}
-    nav{display:flex; gap:14px; flex-wrap:wrap; justify-content:flex-end}
-    nav a{color:var(--muted); font-size:14px; padding:6px 10px; border-radius:10px}
-    nav a:hover{background:rgba(255,255,255,.06); color:var(--text)}
-
-    /* Hero */
-    .hero{padding:42px 0 18px}
-    .heroGrid{display:grid; grid-template-columns: 1.35fr .65fr; gap:18px}
+    .name{font-weight:700}
+    .role{color:var(--muted);font-size:13px}
+    nav{display:flex;gap:10px;flex-wrap:wrap}
+    nav a{color:var(--muted);font-size:14px;padding:6px 10px;border-radius:10px}
+    nav a:hover{background:rgba(255,255,255,.06);color:var(--text)}
     .card{
-      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03));
       border:1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
     }
+    .hero{padding:40px 0 18px}
+    .heroGrid{display:grid;grid-template-columns:1.35fr .65fr;gap:18px}
     .heroMain{padding:26px}
-    .kicker{color:var(--muted); font-size:14px}
-    h1{margin:10px 0 10px; font-size:38px; line-height:1.1}
-    .subtitle{color:var(--muted); margin:0 0 16px}
-    .chips{display:flex; flex-wrap:wrap; gap:10px; margin:16px 0 0}
-    .chip{font-size:13px; color:var(--text); border:1px solid var(--border); background:rgba(255,255,255,.04);
-      padding:8px 10px; border-radius:999px}
-
+    .kicker{color:var(--muted);font-size:14px}
+    h1{margin:10px 0;font-size:38px;line-height:1.1}
+    .subtitle{color:var(--muted);margin:0 0 16px}
+    .chips{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{
+      font-size:13px;border:1px solid var(--border);
+      background:rgba(255,255,255,.04);
+      padding:8px 10px;border-radius:999px;
+    }
     .heroSide{padding:18px}
-    .sideBlock{padding:14px 14px 16px; border-radius:14px; border:1px solid var(--border);
-      background:rgba(0,0,0,.16); margin-bottom:12px}
-    .sideTitle{font-size:13px; color:var(--muted); margin-bottom:8px}
-    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .sideBlock{
+      padding:14px;border-radius:14px;
+      border:1px solid var(--border);
+      background:rgba(0,0,0,.16);margin-bottom:12px
+    }
+    .sideTitle{font-size:13px;color:var(--muted);margin-bottom:8px}
+    .btnRow{display:flex;gap:10px;flex-wrap:wrap}
     .btn{
-      display:inline-flex; align-items:center; justify-content:center; gap:8px;
-      padding:10px 12px; border-radius:12px; border:1px solid var(--border);
-      background:rgba(255,255,255,.05); color:var(--text);
-      font-size:14px; font-weight:600;
+      padding:10px 12px;border-radius:12px;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.05);
+      font-size:14px;font-weight:600;
     }
     .btn.primary{
-      background: linear-gradient(135deg, rgba(122,167,255,.24), rgba(156,255,199,.16));
-      border-color: rgba(122,167,255,.35);
+      background:linear-gradient(135deg,rgba(122,167,255,.24),rgba(156,255,199,.16));
+      border-color:rgba(122,167,255,.35);
     }
-    .btn:hover{transform: translateY(-1px); transition: all .18s ease;}
-
-    /* Sections */
     section{padding:22px 0}
-    .sectionTitle{font-size:18px; margin:0 0 12px}
-    .grid2{display:grid; grid-template-columns: 1fr 1fr; gap:14px}
-
+    .sectionTitle{font-size:18px;margin:0 0 12px}
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
     .block{padding:18px}
     .muted{color:var(--muted)}
-    .list{margin:10px 0 0; padding:0; list-style:none}
-    .list li{margin:8px 0; padding-left:14px; position:relative; color:var(--muted)}
-    .list li::before{content:""; position:absolute; left:0; top:.62em; width:6px; height:6px; border-radius:999px;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));}
-
-    .timeline .item{padding:16px; border-radius:14px; border:1px solid var(--border); background:rgba(255,255,255,.03)}
-    .itemHead{display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap}
+    .list{margin:10px 0 0;padding:0;list-style:none}
+    .list li{
+      margin:8px 0;padding-left:14px;position:relative;color:var(--muted)
+    }
+    .list li::before{
+      content:"";position:absolute;left:0;top:.62em;
+      width:6px;height:6px;border-radius:999px;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+    }
+    .timeline .item{
+      padding:16px;border-radius:14px;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.03)
+    }
+    .itemHead{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
     .itemHead strong{font-size:15px}
-    .tag{font-size:12px; color:var(--muted)}
-
-    .projects{display:grid; grid-template-columns: repeat(3, 1fr); gap:14px}
+    .tag{font-size:12px;color:var(--muted)}
+    .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
     .proj{padding:16px}
-    .proj h3{margin:0 0 8px; font-size:15px}
-    .proj p{margin:0 0 10px; color:var(--muted); font-size:13.5px}
-    .pillRow{display:flex; flex-wrap:wrap; gap:8px}
-    .pill{font-size:12px; color:var(--muted); border:1px solid var(--border); padding:6px 8px; border-radius:999px}
-
-    footer{padding:26px 0 38px; color:var(--muted); border-top:1px solid var(--border); margin-top:16px}
-
-    /* Responsive */
-    @media (max-width: 900px){
-      .heroGrid{grid-template-columns:1fr}
-      .projects{grid-template-columns:1fr}
-      .grid2{grid-template-columns:1fr}
+    .proj h3{margin:0 0 8px;font-size:15px}
+    .proj p{margin:0 0 10px;color:var(--muted);font-size:13.5px}
+    .pillRow{display:flex;flex-wrap:wrap;gap:8px}
+    .pill{font-size:12px;color:var(--muted);border:1px solid var(--border);padding:6px 8px;border-radius:999px}
+    footer{
+      padding:26px 0 38px;color:var(--muted);
+      border-top:1px solid var(--border);margin-top:16px
+    }
+    @media(max-width:900px){
+      .heroGrid,.projects,.grid2{grid-template-columns:1fr}
       h1{font-size:32px}
-      .brand{min-width: unset}
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="top">
-      <div class="brand">
-        <div class="dot" aria-hidden="true"></div>
-        <div>
-          <div class="name">Mounika Boggada</div>
-          <div class="role">Data Analyst • SQL • Python • Power BI</div>
-        </div>
-      </div>
-      <nav aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#certs">Certifications</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="wrap">
-    <div class="hero" id="top">
-      <div class="heroGrid">
-        <div class="card heroMain">
-          <div class="kicker">Chicago, Illinois • Open to Remote/Hybrid</div>
-          <h1>Data quality, reconciliations, and automation — done fast and clean.</h1>
-          <p class="subtitle">I build reliable datasets and reporting pipelines using <strong>SQL</strong>, <strong>Python</strong>, and <strong>Power BI</strong>. My work focuses on validation, discrepancy analysis, and turning messy inputs into decision-ready outputs.</p>
-          <div class="chips" aria-label="Highlights">
-            <span class="chip">SQL (MySQL/PostgreSQL)</span>
-            <span class="chip">Python (Pandas)</span>
-            <span class="chip">Power BI + Excel</span>
-            <span class="chip">ETL + Data Validation</span>
-            <span class="chip">Anomaly Detection</span>
-          </div>
-        </div>
-
-        <aside class="card heroSide">
-          <div class="sideBlock">
-            <div class="sideTitle">Quick links</div>
-            <div class="btnRow">
-              <a class="btn primary" href="mailto:mounika.boggada@gmail.com">Email me</a>
-              <a class="btn" href="https://linkedin.com/in/mounika-boggada" target="_blank" rel="noreferrer">LinkedIn</a>
-              <!-- Optional: add GitHub later -->
-              <!-- <a class="btn" href="https://github.com/YOURUSERNAME" target="_blank" rel="noreferrer">GitHub</a> -->
-            </div>
-          </div>
-          <div class="sideBlock">
-            <div class="sideTitle">Resume</div>
-            <div class="muted">Add your resume PDF file later and link it here.</div>
-            <div class="btnRow">
-              <a class="btn" href="#" onclick="alert('Tip: upload your resume as resume.pdf in the same folder and change this link to ./resume.pdf'); return false;">Download PDF</a>
-            </div>
-          </div>
-          <div class="sideBlock">
-            <div class="sideTitle">Work authorization</div>
-            <div class="muted">Authorized to work in the U.S. under F-1 OPT.</div>
-          </div>
-        </aside>
+<header>
+  <div class="top">
+    <div class="brand">
+      <div class="dot"></div>
+      <div>
+        <div class="name">Mounika Boggada</div>
+        <div class="role">Data Analytics & Reporting • SQL • Python • Power BI</div>
       </div>
     </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#certs">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-    <section id="about">
-      <h2 class="sectionTitle">About</h2>
-      <div class="card block">
-        <p class="muted" style="margin:0">
-          I’m a Computer Science graduate focused on analytics and reporting reliability. I like roles where accuracy matters: 
-          daily checks, reconciliations, automated quality rules, and dashboards that leadership actually trusts.
+<main class="wrap">
+  <div class="hero">
+    <div class="heroGrid">
+      <div class="card heroMain">
+        <div class="kicker">Chicago, Illinois • Open to Hybrid / Remote</div>
+        <h1>Accurate, reliable, and audit-ready reporting.</h1>
+        <p class="subtitle">
+          Data analytics and reporting professional focused on SQL-based data extraction,
+          validation, reconciliation, and dashboarding using Python and Power BI.
         </p>
-      </div>
-    </section>
-
-    <section id="skills">
-      <h2 class="sectionTitle">Skills</h2>
-      <div class="grid2">
-        <div class="card block">
-          <strong>Data & Analytics</strong>
-          <ul class="list">
-            <li>Data quality checks, reconciliations, KPI monitoring</li>
-            <li>Exploratory data analysis (EDA), anomaly detection</li>
-            <li>Feature engineering, validation rules, data documentation</li>
-          </ul>
-        </div>
-        <div class="card block">
-          <strong>Tools</strong>
-          <ul class="list">
-            <li>SQL (MySQL, PostgreSQL), Python (Pandas)</li>
-            <li>Power BI, Advanced Excel</li>
-            <li>Git, VS Code, Linux terminal, REST APIs</li>
-          </ul>
+        <div class="chips">
+          <span class="chip">SQL</span>
+          <span class="chip">Python</span>
+          <span class="chip">Power BI</span>
+          <span class="chip">Data Validation</span>
+          <span class="chip">Reconciliation</span>
         </div>
       </div>
-    </section>
+      <aside class="card heroSide">
+        <div class="sideBlock">
+          <div class="sideTitle">Contact</div>
+          <div class="btnRow">
+            <a class="btn primary" href="mailto:mounika.boggada@gmail.com">Email</a>
+            <a class="btn" href="https://www.linkedin.com/in/mounika-boggada" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+        <div class="sideBlock">
+          <div class="sideTitle">Resume</div>
+          <div class="btnRow">
+            <a class="btn" href="./resume.pdf" target="_blank">Download PDF</a>
+          </div>
+        </div>
+        <div class="sideBlock">
+          <div class="sideTitle">Work Authorization</div>
+          <div class="muted">Eligible to work in the U.S. (F-1 OPT).</div>
+        </div>
+      </aside>
+    </div>
+  </div>
 
-    <section id="experience">
-      <h2 class="sectionTitle">Experience</h2>
-      <div class="card block timeline">
-        <div class="item">
-          <div class="itemHead">
-            <div>
-              <strong>Software Engineering Intern</strong> <span class="muted">• Vsion Technologies (Remote, TX)</span>
-            </div>
-            <div class="tag">Sep 2025 – Present</div>
-          </div>
-          <ul class="list">
-            <li>Performed routine data quality checks, reconciliations, and validation across critical datasets prior to reporting.</li>
-            <li>Built Python- and SQL-based automation to validate data, flag discrepancies, and reduce manual processing time by ~60%.</li>
-            <li>Investigated inconsistencies, explained root causes to stakeholders, and recommended corrective actions.</li>
-            <li>Implemented integrity checks, exception handling, and regression testing to support reliable deployments.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+  <section id="about">
+    <h2 class="sectionTitle">About</h2>
+    <div class="card block">
+      <p class="muted">
+        Computer Science graduate with hands-on experience supporting data quality,
+        reconciliation, and reporting processes in analytics-driven environments.
+      </p>
+    </div>
+  </section>
 
-    <section id="projects">
-      <h2 class="sectionTitle">Projects</h2>
-      <div class="projects">
-        <div class="card proj">
-          <h3>Enterprise Asset & Inventory Analytics System</h3>
-          <p>ETL pipelines and reporting for asset usage, turnover, and waste tracking. Strong focus on reconciliations and data integrity.</p>
-          <div class="pillRow">
-            <span class="pill">Python</span><span class="pill">SQL</span><span class="pill">Power BI</span><span class="pill">Data Validation</span>
-          </div>
-        </div>
-        <div class="card proj">
-          <h3>Automated Analytical Pipeline</h3>
-          <p>Reusable preprocessing, feature engineering, validation layers, and reporting outputs for analytics workflows.</p>
-          <div class="pillRow">
-            <span class="pill">Python</span><span class="pill">Automation</span><span class="pill">EDA</span>
-          </div>
-        </div>
-        <div class="card proj">
-          <h3>Real-Time Decision Support App</h3>
-          <p>Production-style inference pipeline with rule-based checks, logging, and monitoring for continuous improvement.</p>
-          <div class="pillRow">
-            <span class="pill">Python</span><span class="pill">Pipelines</span><span class="pill">Monitoring</span>
-          </div>
-        </div>
-      </div>
-      <p class="muted" style="margin:12px 0 0">Tip: Later we can add screenshots, dashboards, and short case studies for each project (impact, datasets, and what you improved).</p>
-    </section>
-
-    <section id="certs">
-      <h2 class="sectionTitle">Certifications</h2>
+  <section id="skills">
+    <h2 class="sectionTitle">Skills</h2>
+    <div class="grid2">
       <div class="card block">
-        <ul class="list" style="margin-top:0">
-          <li>IBM Data Engineering Foundations</li>
-          <li>Google Data Analytics Certificate</li>
-          <li>Microsoft Learn — Power BI Data Modeling & Reporting</li>
+        <strong>Data & Reporting</strong>
+        <ul class="list">
+          <li>Data validation and reconciliation</li>
+          <li>Trend, variance, KPI/KRI analysis</li>
+          <li>Scheduled and ad-hoc reporting</li>
         </ul>
       </div>
-    </section>
-
-    <section id="contact">
-      <h2 class="sectionTitle">Contact</h2>
       <div class="card block">
-        <p class="muted" style="margin:0 0 12px">Want to talk? Email is fastest.</p>
-        <div class="btnRow">
-          <a class="btn primary" href="mailto:mounika.boggada@gmail.com">mounika.boggada@gmail.com</a>
-          <a class="btn" href="tel:+13315292952">+1 (331) 529-2952</a>
-          <a class="btn" href="https://linkedin.com/in/mounika-boggada" target="_blank" rel="noreferrer">LinkedIn</a>
+        <strong>Tools</strong>
+        <ul class="list">
+          <li>SQL (MySQL, PostgreSQL)</li>
+          <li>Python (Pandas)</li>
+          <li>Power BI, Excel, SharePoint</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2 class="sectionTitle">Experience</h2>
+    <div class="card block timeline">
+      <div class="item">
+        <div class="itemHead">
+          <div><strong>Software Engineering Intern</strong> • Vsion Technologies Inc.</div>
+          <div class="tag">Sep 2025 – Present</div>
         </div>
+        <ul class="list">
+          <li>Support data-centric software and reporting workflows using Python and SQL.</li>
+          <li>Implement validation and reconciliation checks to ensure reporting accuracy.</li>
+          <li>Automate recurring data preparation and reporting tasks.</li>
+        </ul>
       </div>
-    </section>
-
-    <footer>
-      <div class="wrap" style="padding:0">
-        <div>© <span id="y"></span> Mounika Boggada • Built with plain HTML/CSS (fast and recruiter-friendly).</div>
+      <div style="height:12px"></div>
+      <div class="item">
+        <div class="itemHead">
+          <div><strong>System Administrator</strong> • Kautilya Institution</div>
+          <div class="tag">Jun 2022 – Jul 2023</div>
+        </div>
+        <ul class="list">
+          <li>Maintained ERP systems with focus on data integrity and reporting reliability.</li>
+          <li>Extracted, validated, and reconciled operational and financial data.</li>
+          <li>Produced periodic and ad-hoc management reports.</li>
+        </ul>
       </div>
-    </footer>
-  </main>
+    </div>
+  </section>
 
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+  <section id="projects">
+    <h2 class="sectionTitle">Projects</h2>
+    <div class="projects">
+      <div class="card proj">
+        <h3>Operations Inventory & Reporting System</h3>
+        <p>Data reporting workflows focused on reconciliation, accuracy, and operational visibility.</p>
+        <div class="pillRow"><span class="pill">SQL</span><span class="pill">Python</span><span class="pill">Power BI</span></div>
+      </div>
+      <div class="card proj">
+        <h3>Portfolio Data Analysis & Reporting</h3>
+        <p>Analysis of portfolio-style datasets emphasizing consistency and reporting readiness.</p>
+        <div class="pillRow"><span class="pill">SQL</span><span class="pill">Reporting</span></div>
+      </div>
+      <div class="card proj">
+        <h3>Automated Data Quality Checks</h3>
+        <p>Reusable validation and discrepancy detection logic across reporting periods.</p>
+        <div class="pillRow"><span class="pill">Python</span><span class="pill">Validation</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certs">
+    <h2 class="sectionTitle">Certifications</h2>
+    <div class="card block">
+      <ul class="list">
+        <li>Google Data Analytics Professional Certificate</li>
+        <li>IBM Data Engineering Foundations</li>
+        <li>Microsoft Learn — Power BI Data Modeling & Reporting</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="sectionTitle">Contact</h2>
+    <div class="card block">
+      <div class="btnRow">
+        <a class="btn primary" href="mailto:mounika.boggada@gmail.com">mounika.boggada@gmail.com</a>
+        <a class="btn" href="tel:+13315292952">+1 (331) 529-2952</a>
+        <a class="btn" href="https://www.linkedin.com/in/mounika-boggada" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>© <span id="y"></span> Mounika Boggada</div>
+  </footer>
+</main>
+
+<script>
+  document.getElementById("y").textContent=new Date().getFullYear();
+</script>
 </body>
 </html>
